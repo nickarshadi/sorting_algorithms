@@ -24,6 +24,7 @@ void swap(int *array, size_t size, int *a, int *b)
  * @size: the size of the array
  * @l: the low index of the sort range
  * @h: the high index of the sort range
+ * Return: void
  */
 size_t lomuto_partition(int *array, size_t size, ssize_t l, ssize_t h)
 {
@@ -38,7 +39,7 @@ size_t lomuto_partition(int *array, size_t size, ssize_t l, ssize_t h)
 
 }
 /**
- * quicksorts via Lomuto partitioning scheme
+ * quicksort - quicksort via Lomuto partitioning scheme
  * @array: the integer array to sort
  * @size: the size of the array
  * @l: the low index of the sort range
@@ -63,5 +64,5 @@ void quick_sort(int *array, size_t size)
 {
 	if (!array || !size)
 		return;
-	quicksort(array, size, 0, size -1);
+	quicksort(array, size, 0, size - 1);
 }
